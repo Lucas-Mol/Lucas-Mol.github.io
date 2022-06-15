@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Readex+Pro:wght@200&family=Red+Hat+Mono:wght@300;400;600&display=swap');
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.principal {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.section-one {
+    background: linear-gradient(200.3deg, #00001D 60%, rgba(0, 0, 29, 0) 98%), #000045;
+    height: 100vh;
+    min-width: 100%;
+}
+
+.lines-and-ellipses {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.line-header {
+    position:absolute;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid rgba(166, 158, 255, 0.25);
+}
+
+.section-one-line-one {
+    position:absolute;
+    right: 0;
+    top: 150px;
+    height: 1px;
+    width: 30%;
+    border-bottom: 1px solid #0B1080;
+    animation: lineAnimation 1.2s;
+}
+
+.section-one-line-two {
+    position:absolute;
+    left: 0;
+    top: 650px;
+    height: 1px;
+    width: 30%;
+    border-bottom: 1px solid #0B1080;
+    animation: lineAnimation 1.2s
+}
+
+@keyframes lineAnimation {
+    0%{width: 0;}
+    100%{width: 30%;}
+}
+
+.section-one-ellipse-one {
+    position:absolute;
+    border: 1px solid #0B1080;
+    border-radius: 50%;
+    left: 500px;
+    top: 150px;
+    height: 5px;
+    width: 5px;
+}
+
+.section-one-ellipse-two {
+    position:absolute;
+    border: 1px solid #0B1080;
+    border-radius: 50%;
+    right: 500px;
+    top: 650px;
+    height: 5px;
+    width: 5px;
+}
+
+.section-one-binary-code-text {
+    position: absolute;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 200;
+    text-align: right;
+    font-size: 20px;
+    right: 20px;
+    top: 650px;
+    opacity: 0.15;
+}
+
+.wrapper-header {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper-main {
+    position: relative;
+    display: flex;
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.header {
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    background: #00001D;
+    height: 75px;
+}
+
+.header-content {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.header-logo {
+    display: inline-block;
+    align-self: center;
+}
+
+.header-logo-lucas {
+    display: inline;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 600;
+    font-size: 36px;
+    margin-right: 0.4vw;
+}
+
+.header-logo-mol {
+    display: inline;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-nav-list-itens {
+    display: inline;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.header-nav-list-itens:last-child {
+    margin-right: 15px;
+}
+
+.header-nav-logos {
+    display: inline;
+    padding: 5px;
+    height: 50px;
+}
+
+.main-text-div {
+    width: 35%;
+    padding: 40px;
+    margin-top: 21%;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+span {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50%{opacity: 0;}
+}
+
+.section-two {
+    background: #00001D;
+    height: 100vh;
+    min-width: 100%;
+}
+
+.section-two-line-one {
+    position:absolute;
+    left: 100vw;
+    top: 150px;
+    height: 1px;
+    width: 30%;
+    border-bottom: 1px solid #0B1080;
+}
+
+.section-two-trapeze-box {
+    position: absolute;
+    top: 0;
+    left: 140vw;
+    right: 260vw
+}
+
+.section-two-trapeze {
+    height: 99vh;
+}
+
+.section-two-binary-code-text {
+    position: absolute;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 200;
+    text-align: left;
+    font-size: 20px;
+    left: 101vw;
+    top: 230px;
+    opacity: 0.15;
+}
+
+.section-two .main-text-div {
+    display: block;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.titulo-habilidades {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.section-two p {
+    margin-top: 22%;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 1em;
+}
+
+.section-two p:nth-child(3){
+    margin-top: 5%;
+}
+
+.tech-skill-box {
+    display: flex;
+}
+
+.section-two ul {
+    margin-top: 7%;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.section-two ul li {
+    display:inline-grid;
+    padding:10px;
+}
+
+.section-two li img:hover {
+    transform: scale(1.10);
+}
+
+#bigger-icon {
+    transform: scale(0.8);
+    border-radius: 5%;
+}
+
+#bigger-icon:hover {
+    transform: scale(0.9);
+}
+
+.ellipse-profile-demo {
+    width: 50%;
+}
+
+.profile-photo {
+    max-block-size: 280px;
+    border-radius: 60%;
+    margin-top: 15%;
+    margin-left: 300px;
+    padding: 3px;
+    background: #00001D;
+    box-shadow: 10px 5px #000011;
+}
+
+.demo-box {
+    margin: 15% auto;
+    padding: 20px;
+    border: 4px double #000011;
+    border-left: 10px solid #7f7ffc;
+    border-radius: 10px;
+    background:#00003a;
+    height: 270px;
+    width: 500px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 40px;
+    font-size: 27px;
+}
+
+.demo-box h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1519f7;
+}
+
+.demo-box p {
+    font-family: monospace;
+    text-align: justify;
+    word-spacing:-5px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.section-three {
+    background: #000045;
+    height: 100vh;
+    min-width: 100%;
+}
+
+.section-three .main-text-div {
+    margin-top: 15%;
+}
+
+.section-three .main-text-div h2 {
+    font-size: 70px;
+    line-height: 72px;
+
+    background-image: -webkit-linear-gradient(left,#5e99e0 0%,#d8e0f0 80%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.section-three .main-text-div p {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.section-three .main-text-div p:last-child {
+    margin-top: 12px;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.fieldset-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin-top: 32%;
+    margin-left: 150px;
+    width: 100%;
+}
+
+.fieldset-contato label {
+    width: 100%;
+    margin: 8px auto;
+
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.fieldset-contato input {
+    background: linear-gradient(85deg, #000029 55%, #000031 90%)#00003a;
+    border-radius: 6px;
+    border: 2px solid #000011;
+    margin-bottom: 20px;
+    padding: 0 12px;
+    width: 100%;
+    height: 40px;
+
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fieldset-contato textarea {
+    background: linear-gradient(65deg, #000029 55%, #000031 90%)#00003a;
+    border-radius: 6px;
+    border: 2px solid #000011;
+    padding: 5px 12px;
+    width: 100%;
+    height: 140px;
+    margin-top: 25px;
+    
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fieldset-contato button {
+    background: linear-gradient(45deg,#00001D 55%, #000028 90%);
+    border-radius: 6px;
+    border: 2px solid #000011;
+    margin-top: 25px;
+    width: 40%;
+    height: 70px;
+    align-self: flex-end;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.fieldset-contato button:hover {
+    animation: buttonJump 0.8s;
+}
+
+@keyframes buttonJump {
+    25%{
+        margin-top: 20px;
+    }
+    50%{
+        margin-top: 25px;
+    }
+    75%{
+        margin-top:20px;
+    }
+    100%{
+        margin-top: 25px;
+    }
+}
+
+
