@@ -83,4 +83,8 @@ function fillDefaultDemo() {
     document.getElementById("demo-description").innerHTML = "Deslize sobre os ícones e descubra mais.";
 }
 
+function alertDemoSubmit() {
+    alert("ALERTA: Por hora, o formulário é meramente ilustrativo.");
+}
+
 window.addEventListener("load", typingMainText);
