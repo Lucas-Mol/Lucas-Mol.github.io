@@ -83,5 +83,9 @@ function fillDefaultDemo() {
     document.getElementById("demo-description").innerHTML = "Deslize sobre os ícones e descubra mais.";
 }
 
+function alertSubmit() {
+    alert("ALERTA: Por hora, esse portfólio é somente um projeto demostrativo");
+}
+
 
 window.addEventListener("load", typingMainText);
