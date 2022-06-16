@@ -417,7 +417,7 @@
     font-weight: 400;
 }
 
-.form__container fieldset button {
+.form__container fieldset a {
     background: linear-gradient(45deg,#00001D 55%, #000028 90%);
     border-radius: 6px;
     border: 2px solid #000011;
@@ -426,14 +426,17 @@
     height: 70px;
     align-self: flex-end;
 
+
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-top: 20px;
 }
 
-.form__container fieldset button:hover {
+.form__container fieldset a:hover {
     animation: buttonJump 0.8s;
 }
 
