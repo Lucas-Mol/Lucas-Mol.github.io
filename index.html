@@ -10,57 +10,56 @@
     <title>Lucas Mol</title>
 </head>
 <body>
-    <div class="header">
-        <div class="wrapper-header">
-            <header class="header-content">
-                <div class="header-logo">
-                    <a href="#section-one" data-menu-top="0">
-                        <p class="header-logo-lucas">Lucas</p>
-                        <p class="header-logo-mol">Mol</p>
+    <header class="header__container">
+        <div class="header__wrapper">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="#section__home" data-menu-top="0">
+                        <p class="logo__lucas">Lucas</p>
+                        <p class="logo__mol">Mol</p>
                     </a>
                 </div>
-                <nav class="header-nav">
-                    <ul class="header-nav-list">
-                        <li class="header-nav-list-itens"><a href="#section-two" data-menu-top="265">Habilidades</a></li>
-                        <li class="header-nav-list-itens"><a href="#section-three" data-menu-top="530">Contato</a></li>
+                <nav class="header__nav">
+                    <ul>
+                        <li ><a href="#section__skills" data-menu-top="317.2">Habilidades</a></li>
+                        <li ><a href="#section__contacts" data-menu-top="635">Contato</a></li>
                     </ul>
-                    <a href="https://github.com/Lucas-Mol" target="_blank"><img class="header-nav-logos" src="./images/github-icon-90.png" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/lucasmolpro/" target="_blank"><img class="header-nav-logos" src="./images/linkedin-icon-100.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Lucas-Mol" target="_blank"><img class="header__nav-logos" src="./images/github-icon-90.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/lucasmolpro/" target="_blank"><img class="header__nav-logos" src="./images/linkedin-icon-100.png" alt="LinkedIn"></a>
                 </nav>  
-            </header>
-        </div>
-    </div>
-    <main class="principal" data-0="transform:translateX(0%);" data-530="transform:translateX(-200%);">
-        <section  class="section-one">
-            <div class="lines-and-ellipses">
-                <div class="line-header"></div>
-                <div class="section-one-line-one"></div>
-                <div class="section-one-line-two"></div>
-                <div class="section-one-ellipse-one"></div>
-                <div class="section-one-ellipse-two"></div>
-                <p class="section-one-binary-code-text">01001000<br>01101100<br>01101111</p>
             </div>
-            <div class="wrapper-main">
-                <div class="main-text-div">
+        </div>
+        <div class="header__bottom-line"></div>
+    </header>
+    <main class="main" data-0="left: 0%;" data-635="left: -200%;">
+        <section id="section__home" class="section__home">
+            <div class="geometric__shapes">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="ellipse-one"></div>
+                <div class="ellipse-two"></div>
+                <p class="binary-code-text">01001000<br>01101100<br>01101111</p>
+            </div>
+            <div class="main__wrapper">
+                <div class="main__container-text">
                     <p id="mainText"></p>
                 </div>
             </div>
         </section>
-        <section id="section-two" class="section-two" onmouseenter="typingSkillText()">
-            <div class="lines-and-ellipses">
-                <div class="section-two-trapeze-box"><img class="section-two-trapeze"src="./images/trapeze.png"></div>
-                <div class="line-header"></div>
-                <div class="section-two-line-one"></div>
-                <p class="section-two-binary-code-text">01100101<br>01101100<br>00100001</p>
+        <section id="section__skills" class="section__skills" onmouseenter="typingSkillText()">
+            <div class="geometric__shapes">
+                <div class="trapeze-box"><img class="trapeze"src="./images/trapeze.png"></div>
+                <div class="line-one"></div>
+                <p class="binary-code-text">01100101<br>01101100<br>00100001</p>
             </div>
-            <div class="wrapper-main">
-                <div class="main-text-div">
-                    <h2 id="skillText" class="titulo-habilidades"></h2>
+            <div class="main__wrapper">
+                <div class="main__container-text">
+                    <h2 id="skillText" class="skills-title"></h2>
                     <p>Sou um Desenvolvedor Full Stack Junior, entusiasta da tecnologia e
                         em busca por mais <strong>Conhecimento</strong> & <strong>Experiências</strong>.
                     </p>
                     <p>Confira algumas das tecnologias que utilizo:</p>
-                    <div class="tech-skills-box">
+                    <div class="skills__box">
                         <ul>
                             <li><img src="./images/html-icon-90.png" alt="HTML5" onmouseenter="fillDemo(1)" onmouseleave="fillDefaultDemo()"></li>
                             <li><img src="./images/css-icon-90.png" alt="CSS3" onmouseenter="fillDemo(2)" onmouseleave="fillDefaultDemo()"></li>
@@ -75,27 +74,24 @@
                         </ul>
                     </div>
                 </div>
-                <div class="ellipse-profile-demo">
+                <div class="profile-demo__box">
                     <img class="profile-photo" src="./images/profile-photo.png">
-                    <div id="demo-box" class="demo-box">
+                    <div id="demo-box" class="demo__box">
                         <h3 id="demo-title">Saiba mais</h3>
                         <p id="demo-description">Deslize sobre os ícones e descubra mais.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="section-three" class="section-three">
-            <div class="lines-and-ellipses">
-                <div class="line-header"></div>
-            </div>
-            <div class="wrapper-main">
-                <div class="main-text-div">
+        <section id="section__contact" class="section__contact">
+            <div class="main__wrapper">
+                <div class="main__container-text">
                     <h2>Contato</h2> 
                     <p>Gostou do meu trabalho?</p>
                     <p>Entre em contato<br>comigo.</p>  
                 </div>
-                <form class="form-container">
-                    <fieldset class="fieldset-contato">
+                <form class="form__container">
+                    <fieldset>
                         <label for="text-input">Nome</label>
                         <input id="text-input" type="text">
                         <label for="email-input">E-mail</label>

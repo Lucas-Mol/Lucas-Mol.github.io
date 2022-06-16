@@ -1,6 +1,6 @@
 var mainText = ["Olá,<br>Eu sou <strong>Lucas Mol</strong><br>Desenvolvedor Web"];
-var skillText = ["Habilidades &<br>Expêriencias"];
 var mainTextPosition = 0;
+var skillText = ["Habilidades &<br>Expêriencias"];
 var skillTextPosition = 0;
 typingSpeed = 35;
 
