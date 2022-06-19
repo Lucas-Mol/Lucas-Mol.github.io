@@ -13,6 +13,10 @@ Com essa página, tive também como objetivo me desafiar a criar uma página com
 
 ## Overview
 
+![Home](https://cdn.discordapp.com/attachments/778788148921761822/987198644589580318/Captura_de_tela_de_2022-06-17_00-32-16.png)
+
+[![Video](https://media.discordapp.net/attachments/778788148921761822/987186338795237386/Screenshot_20220616-230035_WhatsApp.jpg)](https://youtu.be/UlVPPVRqIDA)
+
 ## Tecnologias Utilizadas
 - HTML
 - CSS
