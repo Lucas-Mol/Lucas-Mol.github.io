@@ -280,12 +280,12 @@
     transform: scale(1.10);
 }
 
-#bigger-icon {
+#icon-java, #icon-clojure, #icon-db {
     transform: scale(0.8);
     border-radius: 5%;
 }
 
-#bigger-icon:hover {
+#icon-java:hover, #icon-clojure:hover, #icon-db:hover {
     transform: scale(0.9);
 }
 

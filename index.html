@@ -6,7 +6,6 @@
     <meta name="description" content="Página Pessoal para Desenvolvedor Web, Lucas Mol.">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="icon" type="imagem/png" href="./images/main-icon.png"/>
-    <script type="text/javascript" src="./scripts/script.js"></script>
     <title>Lucas Mol</title>
 </head>
 <body>
@@ -46,7 +45,7 @@
                 </div>
             </div>
         </section>
-        <section id="section__skills" class="section__skills" onmouseenter="typingSkillText()">
+        <section id="section__skills" class="section__skills">
             <div class="geometric__shapes">
                 <div class="trapeze-box"><img class="trapeze"src="./images/trapeze.png"></div>
                 <div class="line-one"></div>
@@ -61,16 +60,16 @@
                     <p>Confira algumas das tecnologias que utilizo:</p>
                     <div class="skills__box">
                         <ul>
-                            <li><img src="./images/html-icon-90.png" alt="HTML5" onmouseenter="fillDemo(1)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img src="./images/css-icon-90.png" alt="CSS3" onmouseenter="fillDemo(2)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img id="javascript-icon" src="./images/js-icon-90.png" alt="JavaScript" onmouseenter="fillDemo(3)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img id="bigger-icon" src="./images/java-icon-90.png" alt="Java" onmouseenter="fillDemo(4)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img src="./images/git-icon-90.png" alt="Git" onmouseenter="fillDemo(5)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img src="./images/cpp-icon-90.png" alt="C++" onmouseenter="fillDemo(6)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img id="bigger-icon" src="./images/clojure-icon-90.png" alt="Clojure" onmouseenter="fillDemo(7)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img id="bigger-icon"src="./images/db-icon-100.png" alt="Banco de Dados" onmouseenter="fillDemo(8)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img src="./images/nodejs-icon-90.png" alt="Node.js" onmouseenter="fillDemo(9)" onmouseleave="fillDefaultDemo()"></li>
-                            <li><img src="./images/scrum-icon-90.png" alt="Scrum & Metodologias Ágeis" onmouseenter="fillDemo(10)" onmouseleave="fillDefaultDemo()"></li>
+                            <li><img id="icon-html" src="./images/css-icon-90.png" alt="CSS3"></li>
+                            <li><img id="icon-css" src="./images/html-icon-90.png" alt="HTML5"></li>
+                            <li><img id="icon-js" src="./images/js-icon-90.png" alt="JavaScript"></li>
+                            <li><img id="icon-java" src="./images/java-icon-90.png" alt="Java"></li>
+                            <li><img id="icon-git" src="./images/git-icon-90.png" alt="Git"></li>
+                            <li><img id="icon-cpp" src="./images/cpp-icon-90.png" alt="C++"></li>
+                            <li><img id="icon-clojure" src="./images/clojure-icon-90.png" alt="Clojure"></li>
+                            <li><img id="icon-db" src="./images/db-icon-100.png" alt="Banco de Dados"></li>
+                            <li><img id="icon-nodejs" src="./images/nodejs-icon-90.png" alt="Node.js"></li>
+                            <li><img id="icon-scrum" src="./images/scrum-icon-90.png" alt="Scrum & Metodologias Ágeis"></li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +96,7 @@
                         <label for="email-input">E-mail</label>
                         <input id="email-input" type="email">
                        <textarea placeholder="Escreva sua mensagem..."></textarea>
-                       <a href="mailto:lucasmolpro@outlook.com" onclick="alertDemoSubmit()"><strong>Enviar</strong></a>
+                       <a id="submitButton" href="mailto:lucasmolpro@outlook.com"><strong>Enviar</strong></a>
                     </fieldset>
                 </form>
             </div>
@@ -109,5 +108,6 @@
 
         skrollr.menu.init(s)
     </script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 </html>
