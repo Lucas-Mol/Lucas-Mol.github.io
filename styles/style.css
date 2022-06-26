@@ -344,7 +344,11 @@
 .section__contact .main__container-text {
     margin-top: 15%;
 }
-
+.section__home {
+    background: linear-gradient(200.3deg, #00001D 60%, rgba(0, 0, 29, 0) 98%), #000045;
+    height: 100vh;
+    min-width: 100%;
+}
 .section__contact .main__container-text h2 {
     font-size: 70px;
     line-height: 72px;
@@ -418,7 +422,7 @@
     font-weight: 400;
 }
 
-.form__container fieldset a {
+.form__container fieldset button {
     background: linear-gradient(45deg,#00001D 55%, #000028 90%);
     border-radius: 6px;
     border: 2px solid #000011;
@@ -434,10 +438,9 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-top: 20px;
 }
 
-.form__container fieldset a:hover {
+.form__container fieldset button:hover {
     animation: buttonJump 0.8s;
 }
 
@@ -455,3 +458,81 @@
         margin-top: 25px;
     }
 }
+
+.section__mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+        max-height: 100vh;
+    }
+
+    .header__container {
+        position: fixed;
+        width: 100vw;
+        align-items: center;
+        background: #00001D;
+        height: 75px;
+    }
+    
+    .header__wrapper {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .logo__lucas {
+        margin-left: 5vw;
+    }
+
+    .header__nav ul li {
+        display: none;
+    }
+
+    .header__nav a:last-child {
+        margin-right: 5vw;
+    }
+
+    .main {
+        display: none;
+    }
+
+    .section__mobile {
+        display: block;
+        background: linear-gradient(200.3deg, #00001D 60%, rgba(0, 0, 29, 0) 98%), #000045;
+    }
+    
+    .main__wrapper {
+        width: 95vw;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .main__container-text {
+        width: 90vw;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    .main__container-text h2 {
+        font-size: 37px;
+        line-height: 37px;
+        margin-bottom: 1em;
+    
+        background-image: -webkit-linear-gradient(left,#5e99e0 0%,#d8e0f0 80%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+
+    .main__container-text p {
+        justify-content: flex-start;
+        font-size: 20px;
+        line-height: 22px;
+    }
+  }

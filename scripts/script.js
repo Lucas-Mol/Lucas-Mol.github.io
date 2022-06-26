@@ -98,6 +98,21 @@ techIcons.forEach(element => { element.addEventListener('mouseleave', function (
 });
 
 // Atribuindo evento de "onclick" no botão de enviar
-document.querySelector('a#submitButton').addEventListener('click', function () {
-    alert("ALERTA: Por hora, o formulário é meramente ilustrativo.");
+document.querySelector('button#submitButton').addEventListener('click', (event) => {
+//    alert("ALERTA: Por hora, o formulário é meramente ilustrativo.");
+    event.preventDefault();
+
+    const name = document.querySelector('input#name-input').value;
+    const email = document.querySelector('input#email-input').value;
+    const message = document.querySelector('textarea#message-textarea').value;
+    let urlEmail = 'mailto:lucasmolpro@outlook.com';
+
+    if(!name || !email || !message) alert("ALERTA: Campos não preenchidos corretamente.");
+    else {
+        urlEmail += '?subject=' + name + ' - Email de Contato: ' + email +
+             '&body=Mensagem: ' + message;
+                
+                window.open(urlEmail, "_self");
+    }
+
 });

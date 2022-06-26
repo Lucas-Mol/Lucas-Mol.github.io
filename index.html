@@ -91,17 +91,25 @@
                 </div>
                 <form class="form__container">
                     <fieldset>
-                        <label for="text-input">Nome</label>
-                        <input id="text-input" type="text">
+                        <label for="name-input">Nome</label>
+                        <input id="name-input" type="text" required="true">
                         <label for="email-input">E-mail</label>
-                        <input id="email-input" type="email">
-                       <textarea placeholder="Escreva sua mensagem..."></textarea>
-                       <a id="submitButton" href="mailto:lucasmolpro@outlook.com"><strong>Enviar</strong></a>
+                        <input id="email-input" type="email" required="true">
+                        <textarea id="message-textarea" placeholder="Escreva sua mensagem..." required="true"></textarea>
+                        <button id="submitButton" type="submit"><strong>Enviar</strong></button>
                     </fieldset>
                 </form>
             </div>
         </section>
     </main>
+    <section class="section__mobile">
+        <div class="main__wrapper">
+            <div class="main__container-text">
+                <h2>Me Desculpe :(</h2> 
+                <p>O portfólio ainda não foi adaptado para dispositivos móveis.</p> 
+            </div>
+        </div>
+    </section>
     <script type="text/javascript" src="./scripts/skrollr.js"></script>
     <script type="text/javascript">
         var s = skrollr.init();
