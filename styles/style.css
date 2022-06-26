@@ -463,7 +463,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1400px) {
 
     body {
         max-height: 100vh;
@@ -515,7 +515,7 @@
         width: 90vw;
         padding: 0;
         text-align: center;
-        margin: auto;
+        margin: 40vh auto;
     }
 
     .main__container-text h2 {
