@@ -468,22 +468,19 @@
     body {
         max-height: 100vh;
     }
-
-    .header__container {
-        position: fixed;
-        width: 100vw;
-        align-items: center;
-        background: #00001D;
-        height: 75px;
-    }
     
     .header__wrapper {
-        width: 500px;
+        width: 95vw;
         margin: 0 auto;
     }
 
-    .logo__lucas {
-        margin-left: 5vw;
+    .header__content {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin-left: 15vw;
     }
 
     .header__nav ul li {
